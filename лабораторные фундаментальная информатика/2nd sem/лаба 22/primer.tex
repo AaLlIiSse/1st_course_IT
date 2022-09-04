@@ -1,0 +1,131 @@
+\documentclass[a4paper, 12pt]{article}
+
+\usepackage[T2A]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[english,russian]{babel}
+\usepackage{geometry}
+\usepackage{setspace}
+\usepackage{amsmath,amsfonts,amssymb,mathtools}
+\geometry{a4paper,
+total={170mm,257mm},left=0.1cm,right=0.1cm,
+top=0.1cm,bottom=0.1cm}
+\pagestyle{empty} % нумерация выкл.
+\linespread{0.8}
+
+\begin{document}
+
+\begin{center}
+\textbf{\textbf{{\S4. Функциональные последовательности и ряды}}} \hspace{2.5cm}45
+\end{center}
+$\blacktriangleleft$ Очевидно, f(x)=
+$\lim\limits_{x\to 0}f_{n}(x)=0$ при $ 0 \leqslant x \leqslant 1$ Поскольку,
+\[\sup\limits_{0 \leqslant x \leqslant 1} |f_n(x) - f(x)| = \dfrac{1}{n+1}\left(1+\frac{1}{n} \right) , \lim\limits_{x\to \inf}\left(\dfrac{1}{1+n}\left(1 + \dfrac{1}{n}\right)^{-n} \right)=\dfrac{1}{\epsilon} \lim\limits_{n \to \infty}\dfrac{1}{n+1}=0 \] 
+то по критерию, доказанному в примере 103, $f_n(x) \neq 0$
+
+\textbf{105}. $f_n(x)=x^n-x^{2n}$, $0 \leqslant x \leqslant 1$.
+\begin{spacing}{1.5}
+$\blacktriangleleft$ Имеем $f(x)=\lim\limits_{n \to \infty} f_n(x)=0$, $x\in [0,1]$. Функция f(n) достигает абсолютного максимума во внутренней точке сегмента: $x_n=\dfrac{1}{\sqrt[n]{2}}$,$x_n\in[0,1]$. Таким образом, имеем
+\end{spacing}
+\[\sup\limits_{x\in[0,1]}r_n(x)=f_n(x_n)=\dfrac{1}{4}\hspace{0.5cm},\hspace{0.5cm} \lim\limits_{n \to \infty} \left(\sup\limits_{x\in[0,1]}r_n(x) \right) = \dfrac{1}{4}\neq 0\].
+
+Отсюда следует, что последовательность стремится к 0 неравномерно.
+
+\textbf{106}.$f_n(x)=\dfrac{nx}{1+n+x}=x$, $ 0\leqslant x \leqslant 1$.
+
+$ \blacktriangleleft $ Нетрудно увидеть, что $f(x)=\lim\limits_{n\to \infty}\dfrac{nx}{1+n+x}=x$ и справедлива оценка $\sup\limits_{x\in[0,1]}\left|\dfrac{nx}{1+n+x}-x\right|\leqslant\dfrac{2}{n+1}$. Поэтому 
+
+\[\lim\limits_{n\to \infty}\left(\sup\limits_{x\in[0,1]}|f_n(x)-f(x)|\right)=0\hspace{0.5cm},\hspace{0.5cm} f_n(x)=x \]
+
+\textbf{107} $f_n(x) = \sqrt{x^2+\dfrac{1}{n^2}}$, -$\infty < x < +\infty$.
+
+$\blacktriangleleft$ При $n \to \infty f_n(x) \to |x|$ на интервале $[-\infty, +\infty]$, причем 
+
+\[\sup\limits_{x\in -\infty}\left|\sqrt{x^2 + \dfrac{1}{n^2}}-|x|\right|=\sup\limits_{x\in [-\infty, +\infty]}\dfrac{1}{n^2\left(\sqrt{x^2+\dfrac{1}{n^2}}+|x|\right)}=\dfrac{1}{n} ,\]
+
+поэтому $f_n(x)\rightrightarrows |x|$ на всей числовой прямой.$\blacktriangleright$
+
+\textbf{108} $f_n(x)=n\left(\sqrt{x+\dfrac{1}{n}}-\sqrt{x}\right), 0 < x < +\infty$.
+
+$\blacktriangleleft$ Очевидно
+
+\[f(x)=n \left(\sqrt{x + \dfrac{1}{n}} - \sqrt{x} \right) = \dfrac{1}{2\sqrt{x}} , \hspace{0.3cm} 0 < x < +\infty .\]
+
+Поскольку 
+
+\[\sup\limits_{0<x<+\infty}\left|\dfrac{1}{2\sqrt{x}}-\dfrac{1}{\sqrt{x + \dfrac{1}{n}}+\sqrt{x}}\right|= \sup\limits_{0<x<+\infty}\dfrac{1}{2n\sqrt{x}\left(\sqrt{x+\dfrac{1}{n}}+\sqrt{x}\right)^2} = +\infty ,\]
+
+\begin{spacing}{1.8}
+по утверждению примера 103 последовательность сходится неравномерно.$\blacktriangleright$
+
+\textbf{109}а) $f_n(x)=sin(x), -\infty < x< +\infty;$\\
+б)$f(x)=\lim\limits_{n\to \infty}sin\dfrac{x}{n}, -\infty < x< +\infty;$
+ 
+$\blacktriangleleft$ Имеем:
+
+а)$ f(x)=\lim\limits_{n\to 0} \sin x=0 $
+
+б)$ f(x)=\lim\limits_{n\to 0} \sin x=0 $
+\end{spacing}
+
+\begin{center}
+\textbf{\textbf{{Гл.1.Ряды}}}
+\end{center}
+
+Поскольку в случае a)
+
+\[\sup\limits_{-\infty<x<+\infty}f_n(x)=\dfrac{1}{n}\to 0 \hspace{0.2cm} \text{при} \hspace{0.2cm} n\to+\infty, \]
+
+а в случае б)
+
+\[\sup\limits_{-\infty<x<+\infty}|sin \dfrac{x}{n}|=1\]
+
+Достигается при $x=\dfrac{\pi n}{2}(2k+1), k\in Z$, то, в силу примера 103, заключаем, что в случае а)$ f_n(x)\neq 0 $. а в случае б) последовательность сходится неравномерно
+$\blacktriangleleft$ 
+
+\textbf{110} а)$f(x)=\arctan nx,  0<x<\infty$, б)$f(x)=x\arctan nx ,  0<x<\infty$.
+
+$\blacktriangleleft$  а) Имеем $f(x)=\lim\limits_{n\to\infty}arctg (nx) = \dfrac{\pi}{2}$. Поскольку 
+
+\[\sup\limits_{0<x<+\infty} \left|\dfrac{\pi}{2} - \arctan nx \right| = \lim\limits_{x\to +0} \left|\dfrac{\pi}{2} - \arctan nx \right| = \dfrac{\pi}{2}, \]
+
+то последовательность сходится неравномерно $\blacktriangleleft$
+
+б) Здесь $f(x) = \dfrac{\pi x}{2}, r_n(x) = x \left(\dfrac{\pi}{2} - \arctan nx\right)$ Используя равенство $\dfrac{\pi}{2} - \arctan nx = \arctan \dfrac{1}{nx},$ и неравенство $\arctan a < a$, имеем оценку 
+
+\[\left| x \left( \dfrac{\pi}{2} - \arctan nx \right) \right| = \left| x\arctan \dfrac{1}{nx} \right| < x\frac{1}{nx} = \frac{1}{n} \to 0,  n \to \infty,\]
+
+независимо от $x\in[0, +\infty]$ $\blacktriangleleft$. Следовательно, по определению 2, п.4.1 $f_n(x) \rightrightarrows \dfrac{\pi x}{2}$
+
+\textbf{\textbf{111.}} $f_n(x)=\left(1+\dfrac{x}{n}\right)^n$ : а) на конечном интервале [a,b] ; б) на интервале [0,1] 
+
+$\blacktriangleleft$ В обоих случаях легко находим предельную функцию $f : x \to \epsilon^x$ . Далее, в случае ф) преставляем последователность в виде 
+
+\[f_n(x)=\exp\left(n\ln\left(1+\dfrac{x}{n} \right) \right). \]
+
+\begin{spacing}{0.4}
+Здесь $n > N$, где N выбирается из очевидного условия $1 + \dfrac{x}{N}>0$ при $x \in [a, b].$ Применяя к функции $x \to \ln \left(1 + \dfrac{x}{n} \right),$ формулу Тейлора с остаточным членом в форме Лагранжа, из (1) получаем
+
+\[f_n(x)=\exp \left(x - \dfrac{x^2 \varepsilon_n^2}{2n} \right), n \in N. \]
+\end{spacing}
+
+Поскольку 
+
+\[\epsilon^x \left( 1-\exp \left\lbrace -\dfrac{x^2 \varepsilon_n^2}{2n} \right\rbrace \right) < \epsilon^b \left( 1 - \exp \left\lbrace -\dfrac{M^2}{2n} \left( 1 - \dfrac{M}{n} \right)^{-2} \right\rbrace \right) ,\]
+
+где M = max, стремится к нулю при $n \to \infty$ независимо от $ х \in [a,b]$, то по опредлению 2 $ f_n(x) \rightrightarrows \epsilon^x $ на [a, b].
+
+В случае б) получаем 
+
+\[ \lim\limits_{x\to \infty} \left| \epsilon^x - \left(1+\dfrac{x}{n} \right)^n \right| = +\infty ,\]
+
+Поэтому $\sup\limits_{0<x<1} r_n(x) = +\infty $ Таким образо, последовательность на всей прямой сходится неравномерно $\blacktriangleright$
+
+\textbf{\textbf{112.}} $f(x)= n \left( x {\dfrac{1}{n}} - 1 \right), 1 \leqslant x \leqslant a.$
+
+$ \blacktriangleleft $ Легко найти, что $f_n(x) \to \ln x $ на [1, a] при $n \to \infty$. Далее, применяя формулу Тейлора, находим 
+
+$ r_n(x)= \left| n(x^{\dfrac{1}{n}} -1) - \ln x \right| = \left| n(\epsilon^{\dfrac{1}{n} \ln x} - 10-\ln x \right| =$
+
+\[= \left|\left(1+\dfrac{1}{n}\ln x - \dfrac{\ln^2x}{2n^2} \epsilon^{\varepsilon} - 1 \right) - \ln x \right| = \dfrac{\ln^2x}{2n^2} \epsilon^{\varepsilon m} < \dfrac{\ln^2x}{2n^2} \epsilon^{\varepsilon} \to 0 \]
+
+\end{document}
