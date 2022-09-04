@@ -1,3 +1,3 @@
-# 1st_course 806
+# 1st course 806
 
 labs, coursework ect
